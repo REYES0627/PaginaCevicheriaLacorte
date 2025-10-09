@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panadería & Pastelería</title>
+  <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  <link rel="stylesheet" href="compras.css" />
+  <script
+      src="https://kit.fontawesome.com/d9cdfd874a.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Cevichería LA CORTE</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+      <div id="menu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="especiales.html">Especialidades</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+<!-- Carrusel -->
+    <div
+        id="carouselExample"
+        class="carousel slide mb-4"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/ceviche.jpg"
+              class="d-block w-100"
+              alt="Bizcocho artesanal"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/ArrosMariscos.jpg"
+              class="d-block w-100"
+              alt="Pan recién horneado"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/triomarino.jpg"
+              class="d-block w-100"
+              alt="Bizcocho especial"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+  <header id="catalogo" class="py-5 text-center bg-gradient">
+  <div class="container">
+    <h1 class="display-6">Catálogo de Productos</h1>
+    <p class="lead">El sabor que alegra tus momentos</p>
+    <div class="btn-group" role="group" aria-label="Filtros">
+      <button class="btn btn-outline-light" data-filter="all">Todos</button>
+      <button class="btn btn-outline-light" data-filter="ceviches">Ceviches</button>
+      <button class="btn btn-outline-light" data-filter="leches">Leches</button>
+      <button class="btn btn-outline-light" data-filter="arroces">Arroces</button>
+      <button class="btn btn-outline-light" data-filter="chicharrones">Chicharrones</button>
+    </div>
+  </div>
+</header>
+
+
+
+<main class="mt-5 pt-4">
+
+  <div class="container">
+        <div class="row">
+          <!-- Columna principal con productos -->
+          <div class="col-lg-9">
+            <!-- ceviches -->
+           <section id="ceviches" class="categoria-productos mb-5">
+  <h2 class="mb-4 border-bottom pb-2">Ceviches</h2>
+  <p class="categoria-descripcion mb-4">
+    Ceviches irresistibles, frescura y sabor que explotan en cada mordida.
+  </p>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+    <!-- Producto 1 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-cat="ceviches" data-id="Ceviche - pescado">
+        <img src="img/CevichePescado.jpg" class="card-img-top" alt="Ceviche de pescado" style="height:200px; object-fit:cover">
+        <div class="card-body">
+          <h3 class="card-title">Ceviche de pescado</h3>
+          <p class="precio fw-bold text-primary">S/ 25.00</p>
+          
+          <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (100)</span></div>
+          <p class="opiniones text-muted small">"Ceviche con pescado fresco, cebolla, cilantro y limón, porción individual."</p>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver" 
+                  data-bs-toggle="modal" 
+                  data-bs-target="#modalProducto"
+                  data-title="Ceviche de pescado"
+                  data-desc="Disfruta de nuestro cebiche de pescado fresco, preparado
+                   al instante con trozos suaves de pescado, cebolla morada, cilantro y jugo 
+                   de limón recién exprimido. Cada bocado combina lo ácido, lo picante y lo natural en un equilibrio perfecto.
+                 Ideal para quienes buscan probar lo mejor de la cocina peruana."
+                  data-img="img/CevichePescado.jpg"
+                  data-price="S/ 25.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-cat="ceviches" data-id="Ceviche-mixto">
+        <img src="img/cevichemixto.jpg" class="card-img-top" alt="Ceviche mixto" style="height:200px; object-fit:cover">
+        <div class="card-body">
+          <h3 class="card-title">Ceviche mixto</h3>
+          <p class="precio fw-bold text-primary">S/ 32.00</p>
+         
+          <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (100)</span></div>
+          <p class="opiniones text-muted small">"Mixtura de mariscos de temporada, 
+            cangrejo, conchas de abanico, base de leche de tigre, zumo de limón y 
+            pasta de rocoto, porción individual."</p>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver" 
+                  data-bs-toggle="modal" 
+                  data-bs-target="#modalProducto"
+                  data-title="Ceviche mixto"
+                  data-desc="Prueba nuestra mixtura de mariscos de temporada, 
+                  una explosión de sabor marino con cangrejo, conchas de abanico y una base cremosa de leche de tigre. 
+                  El toque de zumo de limón y pasta de rocoto realza su frescura y picor justo. Una porción individual 
+                  perfecta para los amantes del buen sabor del mar."
+                  data-img="img/cevichemixto.jpg"
+                  data-price="S/ 32.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-cat="ceviches" data-id="Ceviche- a- la -Piedra">
+        <img src="img/CevichealaPiedra.jpg" class="card-img-top" alt="Ceviche a la Piedra" style="height:200px; object-fit:cover">
+        <div class="card-body">
+          <h3 class="card-title">Ceviche a la Piedra</h3>
+          <p class="precio fw-bold text-primary">S/ 30.00</p>
+          
+          <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (100)</span></div>
+          <p class="opiniones text-muted small">"Ceviche con pescado, cebolla, cilantro, camote y limón, porción individual."</p>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver" 
+                  data-bs-toggle="modal" 
+                  data-bs-target="#modalProducto"
+                  data-title="Ceviche a la Piedra"
+                  data-desc="Descubre el sabor único de nuestro ceviche a la piedra, 
+                  preparado con pescado fresco, cebolla, cilantro, camote y jugo de limón recién exprimido. 
+                  Servido sobre piedra caliente, su presentación realza los aromas y
+                   ofrece una experiencia distinta, combinando frescura, textura y el toque
+                   tradicional peruano en cada porción individual."
+                  data-img="img/CevichealaPiedra.jpg"
+                  data-price="S/ 30.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-cat="ceviches" data-id="Ceviche - Mariscos">
+        <img src="img/cevichedeMariscos.jpg" class="card-img-top" alt="Ceviche de Mariscos" style="height:200px; object-fit:cover">
+        <div class="card-body">
+          <h3 class="card-title">Ceviche de Mariscos</h3>
+          <p class="precio fw-bold text-primary">S/ 33.00</p>
+          
+          <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (100)</span></div>
+          <p class="opiniones text-muted small">"Ceviche con mariscos de pulpo, calamares, pota, camote, choclo, cilantro y limón, porción individual."</p>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver" 
+                  data-bs-toggle="modal" 
+                  data-bs-target="#modalProducto"
+                  data-title="Ceviche de Mariscos"
+                  data-desc="Disfruta nuestro ceviche de mariscos, una deliciosa combinación de pulpo, 
+                  calamar y pota, acompañados de camote, choclo, cilantro y jugo de limón recién exprimido. 
+                  Cada porción individual resalta 
+                  la frescura del mar con el equilibrio perfecto entre lo ácido y lo picante. ¡Un clásico marino lleno de sabor peruano!."
+                  data-img="img/cevichedeMariscos.jpg"
+                  data-price="S/ 33.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+    <!-- Producto 5 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-cat="ceviches" data-id="Ceviche - Junior">
+        <img src="img/CevicheJunior.jpg" class="card-img-top" alt="Ceviche Junior" style="height:200px; object-fit:cover">
+        <div class="card-body">
+          <h3 class="card-title">Ceviche Junior</h3>
+          <p class="precio fw-bold text-primary">S/ 21.00</p>
+          
+          <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (100)</span></div>
+          <p class="opiniones text-muted small">"Delicioso ceviche de pescado y pota."</p>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver" 
+                  data-bs-toggle="modal" 
+                  data-bs-target="#modalProducto"
+                  data-title="Ceviche Junior"
+                  data-desc="Disfruta nuestro ceviche junior, preparado con una deliciosa 
+                  mezcla de pescado y pota marinados en jugo de limón fresco. Un plato lleno de sabor marino, 
+                  ideal para quienes prefieren una porción individual más ligera sin perder la esencia del 
+                  auténtico ceviche peruano."
+                  data-img="img/CevicheJunior.jpg"
+                  data-price="S/ 21.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+
+    <!-- Producto 6 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-cat="ceviches" data-id="Ceviche - LaCorte">
+        <img src="img/cevicheLacorte.jpg" class="card-img-top" alt="Ceviche La Corte" style="height:200px; object-fit:cover">
+        <div class="card-body">
+          <h3 class="card-title">Ceviche La Corte</h3>
+          <p class="precio fw-bold text-primary">S/ 38.00</p>
+          
+          <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (100)</span></div>
+          <p class="opiniones text-muted small">"Ceviche con pescado, conchas negras, camote, choclo, cilantro y limón, porción individual."</p>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver" 
+                  data-bs-toggle="modal" 
+                  data-bs-target="#modalProducto"
+                  data-title="Ceviche La Corte"
+                  data-desc="Vive una experiencia marina única con nuestro ceviche La Corte, 
+                  preparado con pescado fresco y conchas negras, acompañados de camote, choclo, cilantro y jugo de limón recién exprimido. 
+                  Una porción individual con el equilibrio perfecto entre sabor, frescura y tradición peruana."
+                  data-img="img/cevicheLacorte.jpg"
+                  data-price="S/ 38.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="modalProducto" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <figure class="row">
+          <div class="col-md-6">
+            <img id="modalImg" src="" alt="" class="img-fluid rounded">
+          </div>
+          <figcaption class="col-md-6 d-flex flex-column justify-content-center">
+            <h5 id="modalTitle" class="mb-3"></h5>
+            <p id="modalDesc"></p>
+            <p id="modalPrice" class="fw-bold text-primary mt-2"></p>
+            <button id="modalBtnAgregar" class="btn btn-primary mt-3">Añadir al carrito</button>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Login -->
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Iniciar Sesión</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" id="correo" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="clave" class="form-label">Contraseña</label>
+            <input type="password" id="clave" class="form-control" required />
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
+          <!-- Aquí aparecerá el mensaje -->
+          <p id="loginMessage" class="mt-3 text-center fw-semibold"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+                 <!-- Leches -->
+            <section id="Leches" class="categoria-productos mb-5">
+              <h2 class="mb-4 border-bottom pb-2">Leches</h2>
+              <p class="categoria-descripcion mb-4">
+                Desde la clásica hasta la más atrevida que transforman cualquier bocado en una explosión de mar.
+              </p>
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                 <!-- Producto 1 -->
+    <div class="col">
+       <article class="card h-100 product-card" data-id="Leche - de- Tigre" data-cat="leches">
+        <img src="img/LecheDeTigre.jpg" class="card-img-top" alt="Leche de Tigre" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Leche de Tigre</h3>
+          <p class="precio fw-bold text-primary">S/ 16.50</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (100)</span></div>
+            <p class="opiniones text-muted small">"Delicioso plato, a base de leche de tigre, pescado y canchita."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Leche de Tigre"
+                  data-desc="Delicioso plato a base de leche de tigre, pescado y canchita.
+                   La leche de tigre resalta por su sabor intenso y refrescante, ideal para quienes 
+                   disfrutan la esencia del ceviche en una versión más concentrada. Cada porción combina
+                   la frescura del mar con el toque crocante de la canchita, creando una experiencia 
+                   irresistible para el paladar."
+                  data-img="img/LecheDeTigre.jpg"
+                  data-price="S/ 16.50">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="col">
+       <article class="card h-100 product-card" data-id="Leche-de-Pantera" data-cat="leches">
+        <img src="img/lechedePantera.jpg" class="card-img-top" alt="Leche de Pantera" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Leche de Pantera</h3>
+          <p class="precio fw-bold text-primary">S/ 29.50</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️ (70)</span></div>
+            <p class="opiniones text-muted small">"Deliciosa plato de leche de tigre, cebolla y canchita."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Leche de Pantera"
+                  data-desc="Delicioso plato de leche de tigre, cebolla y canchita.
+                   La leche de pantera destaca por su sabor intenso y refrescante, 
+                   ideal para los amantes del buen sabor marino. Una porción individual que 
+                   combina fuerza, frescura y tradición en cada sorbo."
+                  data-img="img/lechedePantera.jpg"
+                  data-price="S/ 29.50">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-id="Leche-la-Corte" data-cat="leches">
+        <img src="img/lechelaCorte.jpg" class="card-img-top" alt="Leche la Corte" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Leche la Corte</h3>
+          <p class="precio fw-bold text-primary">S/ 27.00</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️ (70)</span></div>
+            <p class="opiniones text-muted small">"Deliciosa leche la corte es a base de crema de rocoto, pescado y canchita."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-secondary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Leche la Corte"
+                  data-desc="Deliciosa leche La Corte, a base de crema de rocoto, 
+                  pescado y canchita. Un plato con carácter y sabor intenso, donde la suavidad del pescado se mezcla con el
+                   picante del rocoto y el toque crocante de la canchita, creando una experiencia llena de energía y tradición peruana"
+                  data-img="img/lechelaCorte.jpg"
+                  data-price="S/ 27.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+  
+</div>
+</section>
+
+
+
+            <!-- Arroces -->
+            <section id="Arroces" class="categoria-productos mb-5">
+              <h2 class="mb-4 border-bottom pb-2">Arroces</h2>
+              <p class="categoria-descripcion mb-4">
+                Obras de arte para tus momentos más especiales.
+              </p>
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                 <!-- Producto 1 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-id="Arroz-con-Marisco" data-cat="arroces">
+        <img src="img/ArrosconMariscos.jpg" class="card-img-top" alt="Arroz con Marisco" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Arroz con Marisco</h3>
+          <p class="precio fw-bold text-primary">S/ 29.50</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (150)</span></div>
+            <p class="opiniones text-muted small">"Delicioso arroz a base de marisco al estilo del cheff."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Arroz con Marisco"
+                  data-desc="Delicioso arroz con mariscos, preparado al estilo del cheff. Un plato lleno de sabor y 
+                  frescura, donde el arroz se mezcla con mariscos seleccionados y
+                   el toque especial del chef, logrando una combinación perfecta entre lo marino y lo criollo."
+                  data-img="img/ArrosconMariscos.jpg"
+                  data-price="S/ 29.50">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+    <!-- Producto 2 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-id="Arroz-con-Langostino" data-cat="arroces">
+        <img src="img/arrosconLangostino.jpg" class="card-img-top" alt="Arroz con Langostino" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Arroz con Langostino</h3>
+          <p class="precio fw-bold text-primary">S/ 32.00</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (90)</span></div>
+            <p class="opiniones text-muted small">"Arroz con salsa y acompañado de langostino."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Arroz con Langostino"
+                  data-desc="Exquisito arroz con salsa, acompañado de langostinos 
+                  frescos cuidadosamente preparados. Nuestro arroz con langostino destaca por su sabor intenso y su textura cremosa, 
+                  donde cada grano de arroz 
+                  absorbe el gusto del mar y la suavidad del langostino. Un plato ideal para los amantes de la buena cocina marina."
+                  data-img="img/arrosconLangostino.jpg"
+                  data-price="S/ 32.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+
+<!-- Producto 3 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-id="Arroz - ConchasNegras" data-cat="arroces">
+        <img src="img/ArrosConchasNegras.jpg" class="card-img-top" alt="Arroz con Conchas Negras" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Arroz con Conchas Negras</h3>
+          <p class="precio fw-bold text-primary">S/ 35.00</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (90)</span></div>
+            <p class="opiniones text-muted small">"La mejor receta norteña con deliciosas conchas negras y la sazón de la casa."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Arroz con Conchas Negras"
+                  data-desc="La mejor receta norteña, preparada con deliciosas conchas negras y 
+                  la inconfundible sazón de la casa. Nuestro arroz con conchas negras combina tradición, 
+                  sabor y frescura en cada bocado, 
+                  ofreciendo una experiencia auténtica del norte peruano que deleita a todos los amantes de la comida marina."
+                  data-img="img/ArrosConchasNegras.jpg"
+                  data-price="S/ 35.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+
+<!-- Producto 4 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-id="Arroz - Camarones" data-cat="arroces">
+        <img src="img/ArrosCamarones.jpg" class="card-img-top" alt="Arroz con Camarones" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Arroz con Camarones</h3>
+          <p class="precio fw-bold text-primary">S/ 33.00</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (90)</span></div>
+            <p class="opiniones text-muted small">"Delicioso arroz a base de exquisitos camarones."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Arroz con Camarones"
+                  data-desc="Delicioso arroz a base de exquisitos camarones, preparado con el toque perfecto de sabor y
+                   frescura. Nuestro arroz con camarones combina la suavidad del marisco
+                   con la sazón tradicional de la casa, creando un plato lleno de color, aroma y un gusto inigualable del mar peruano."
+                  data-img="img/ArrosCamarones.jpg"
+                  data-price="S/ 33.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+<!-- Producto 5 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-id="chaufa - Mixto" data-cat="arroces">
+        <img src="img/ChaufaMixto.jpg" class="card-img-top" alt="Chaufa Mixto" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Chaufa Mixto</h3>
+          <p class="precio fw-bold text-primary">S/ 32.00</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (90)</span></div>
+            <p class="opiniones text-muted small">"Arroz frito al wok a base de una mixtura de mariscos."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Chaufa Mixto"
+                  data-desc="Exquisito arroz frito al wok, preparado a base de una mixtura de mariscos frescos. 
+                  Nuestro chaufa mixto combina la tradición oriental con el sabor marino peruano,
+                   logrando un equilibrio perfecto entre textura, aroma y sazón. Un plato lleno de energía y sabor en cada bocado."
+                  data-img="img/ChaufaMixto.jpg"
+                  data-price="S/ 32.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+
+    <!-- Producto 6 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-id="Chaufa -Mariscos" data-cat="arroces">
+        <img src="img/chaufademariscos.jpg" class="card-img-top" alt="Chaufa de Mariscos" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Chaufa de Mariscos</h3>
+          <p class="precio fw-bold text-primary">S/ 34.00</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (90)</span></div>
+            <p class="opiniones text-muted small">"Arroz frito, mariscos de temporada, trozos de huevo frito y cebolla china."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Chaufa de Mariscos"
+                  data-desc="Delicioso arroz frito con mariscos de temporada, trozos de huevo frito y cebolla china. 
+                  El chaufa de mariscos destaca por su sabor único y balance perfecto entre el mar y la sazón tradicional."
+                  data-img="img/chaufademariscos.jpg"
+                  data-price="S/ 34.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+
+    <!-- Producto 7 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-id="Chaufa -Langostinos" data-cat="arroces">
+        <img src="img/chaufaLangostinos.jpg" class="card-img-top" alt="Chaufa de Langostinos" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Chaufa de Langostinos</h3>
+          <p class="precio fw-bold text-primary">S/ 35.00</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (90)</span></div>
+            <p class="opiniones text-muted small">"Arroz frito, langostinos, trozos de huevo frito y cebolla china."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Chaufa de Langostinos"
+                  data-desc="Delicioso arroz frito preparado con langostinos, trozos de huevo frito y 
+                  cebolla china. Nuestro chaufa de langostinos ofrece una combinación perfecta de sabores y texturas,
+                   donde la suavidad del 
+                  arroz se mezcla con el toque jugoso del langostino y el aroma
+                   fresco de la cebolla china. Un plato abundante, sabroso."
+                  data-img="img/chaufaLangostinos.jpg"
+                  data-price="S/ 35.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+    
+
+    <!-- Producto 8 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-id="Chaufa -camarones" data-cat="arroces">
+        <img src="img/chaufacamarones.jpeg" class="card-img-top" alt="Chaufa de Camarones" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Chaufa de Camarones</h3>
+          <p class="precio fw-bold text-primary">S/ 34.00</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (90)</span></div>
+            <p class="opiniones text-muted small">"Delicioso chaufa a base de camarones."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Chaufa de Camarones"
+                  data-desc="Delicioso chaufa a base de camarones, preparado con arroz frito y
+                   el toque perfecto de sazón que resalta el sabor del mar. El chaufa de camarones combina la suavidad del 
+                  arroz con la frescura y textura de los camarones, creando un 
+                  plato irresistible para los amantes de la comida marina."
+                  data-img="img/chaufacamarones.jpeg"
+                  data-price="S/ 34.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+
+
+            <!-- Chicharrones -->
+            <section id="chicharrones" class="categoria-productos mb-5" >
+              <h2 class="mb-4 border-bottom pb-2">Chicharrones</h2>
+              <p class="categoria-descripcion mb-4">
+                Pequeñas delicias para endulzar tu día.
+              </p>
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                  <!-- Producto 1 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-id="Chicharrón-de-Pota" data-cat="chicharrones">
+        <img src="img/chicharrondePota.jpg" class="card-img-top" alt="Chicharrón de Pota" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Chicharrón de Pota</h3>
+          <p class="precio fw-bold text-primary">S/ 24.00</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️⭐️ (95)</span></div>
+            <p class="opiniones text-muted small">"Chicharrón de pota empanizado, 100 gr."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Chicharrón de Pota"
+                  data-desc="Crujiente y delicioso chicharrón de pota empanizado, preparado con pota fresca y dorado 
+                  a la perfección. Un plato sabroso y lleno de textura, ideal para disfrutar el auténtico sabor del mar en cada bocado."
+                  data-img="img/chicharrondePota.jpg"
+                  data-price="S/ 24.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-id="Chicharrón-de-Pescado" data-cat="chicharrones">
+        <img src="img/chicharrondePescado.jpg" class="card-img-top" alt="Chicharrón de Pescado" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Chicharrón de Pescado</h3>
+          <p class="precio fw-bold text-primary">S/ 28.00</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️ (80)</span></div>
+            <p class="opiniones text-muted small">"Chicharrón de pescado, 100 gr, servido con ensalada del día."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Chicharrón de Pescado"
+                  data-desc="Delicioso chicharrón de pescado, preparado con trozos de pescado fresco y acompañado de una ensalada del día que resalta su sabor.
+                   Crujiente por fuera y suave por dentro, es un plato perfecto para disfrutar la frescura del mar con un toque tradicional."
+                  data-img="img/chicharrondePescado.jpg"
+                  data-price="S/ 28.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-id="Chicharrón-Mixto" data-cat="chicharrones">
+        <img src="img/chicharronMixto.jpg" class="card-img-top" alt="Chicharrón Mixto" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Chicharrón Mixto</h3>
+          <p class="precio fw-bold text-primary">S/ 32.00</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️ (120)</span></div>
+            <p class="opiniones text-muted small">"Pesca con mariscos del día fritos, 100 gr, acompañado de yuca frita y zarza criolla."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Chicharrón Mixto"
+                  data-desc="Exquisita pesca con mariscos del día fritos, acompañados de yuca frita
+                   y zarza criolla. Nuestro chicharrón mixto combina lo mejor del mar en un solo plato,
+                   con sabores intensos, texturas crujientes y la frescura que caracteriza a la cocina peruana."
+                  data-img="img/chicharronMixto.jpg"
+                  data-price="S/ 32.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+
+     <!-- Producto 4 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-id="chicharron-mariscos" data-cat="chicharrones">
+        <img src="img/chicharrondemariscos.jpg" class="card-img-top" alt="Chicharrón de Mariscos" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Chicharrón de Mariscos</h3>
+          <p class="precio fw-bold text-primary">S/ 35.00</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️ (120)</span></div>
+            <p class="opiniones text-muted small">"Chicharrón de mariscos empanizados de temporada, 100 gr, salsa criolla y porción de yucas fritas."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Chicharrón de Mariscos"
+                  data-desc="Delicioso chicharrón de mariscos empanizados de temporada, acompañado de 
+                  salsa criolla y una porción de yucas fritas. Nuestro chicharrón de 
+                  mariscos destaca por su textura crujiente, su sabor fresco y la combinación perfecta 
+                  entre lo marino y lo tradicional."
+                  data-img="img/chicharrondemariscos.jpg"
+                  data-price="S/ 35.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+<!-- Producto 5 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-id="chicharron-calamar" data-cat="chicharrones">
+        <img src="img/chicharrondeCalamar.jpg" class="card-img-top" alt="Chicharrón de Calamar" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Chicharrón de Calamar</h3>
+          <p class="precio fw-bold text-primary">S/ 35.00</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️ (120)</span></div>
+            <p class="opiniones text-muted small">"Calamares fritos en aros, 100 gr."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Chicharrón de Calamar"
+                  data-desc="Crujientes calamares fritos en aros, dorados a la perfección para mantener su suavidad interior. 
+                  Nuestro chicharrón de calamar es 
+                  un plato lleno de sabor y textura, ideal para disfrutar como entrada o acompañamiento del mar."
+                  data-img="img/chicharrondeCalamar.jpg"
+                  data-price="S/ 35.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+
+
+    <!-- Producto 6 -->
+    <div class="col">
+      <article class="card h-100 product-card" data-id="chicharron-langostinos" data-cat="chicharrones">
+        <img src="img/ChicharrondeLangostinos.jpg" class="card-img-top" alt="Chicharrón de Langostinos" loading="lazy" style="height: 200px; object-fit: cover" />
+        <div class="card-body">
+          <h3 class="card-title">Chicharrón de Langostinos</h3>
+          <p class="precio fw-bold text-primary">S/ 36.00</p>
+          <div class="detalles-producto">
+            
+            <div class="valoracion mb-2"><span>⭐️⭐️⭐️⭐️ (120)</span></div>
+            <p class="opiniones text-muted small">"Chicharrón de langostinos empanizados, 100 gr, salsa criolla y porción de yucas fritas."</p>
+          </div>
+        </div>
+        <div class="card-footer d-flex gap-2">
+          <button class="btn btn-primary w-50 btn-agregar">Añadir al carrito</button>
+          <button class="btn btn-outline-secondary w-50 btn-ver"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProducto"
+                  data-title="Chicharrón de Langostinos"
+                  data-desc="Delicioso chicharrón de langostinos empanizados,
+                   acompañado de salsa criolla y una porción de yucas fritas. Crujiente por fuera y
+                   jugoso por dentro, nuestro chicharrón de langostinos combina frescura, sabor marino y tradición en cada bocado."
+                  data-img="img/ChicharrondeLangostinos.jpg"
+                  data-price="S/ 36.00">
+            Ver
+          </button>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</section>
+          </div>
+
+
+          <!-- Columna del carrito -->
+          <div class="col-lg-3">
+            <aside
+              id="carrito"
+              class="carrito-container sticky-top"
+              style="top: 80px"
+            >
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="h5 mb-0">Tu Carrito de Compras</h2>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="carrito-items"
+                    style="max-height: 300px; overflow-y: auto"
+                  ></div>
+
+                  <div class="cupon-section mt-3">
+                    <label for="cupon-code" class="form-label"
+                      >¿Tienes un cupón?</label
+                    >
+                    <div class="input-group mb-2">
+                      <input
+                        type="text"
+                        id="cupon-code"
+                        name="cupon-code"
+                        class="form-control"
+                        placeholder="Introduce tu cupón"
+                      />
+                      <button
+                        class="btn btn-outline-secondary"
+                        id="aplicar-cupon"
+                      >
+                        Aplicar
+                      </button>
+                    </div>
+                    <p class="cupon-message small"></p>
+                  </div>
+
+                  <div class="resumen-precios mt-3">
+                    <div class="d-flex justify-content-between">
+                      <span>Subtotal:</span>
+                      <span class="subtotal-valor">S/ 0.00</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <span>Descuento:</span>
+                      <span class="descuento-valor">S/ 0.00</span>
+                    </div>
+                    <hr />
+                    <div class="d-flex justify-content-between fw-bold">
+                      <span>Total:</span>
+                      <span class="total-valor">S/ 0.00</span>
+                    </div>
+                  </div>
+
+                  <div class="carrito-acciones mt-3">
+                    <button class="btn btn-success w-100 mb-2 btn-checkout">
+                      Proceder al Pago
+                    </button>
+                    <button
+                      class="btn btn-outline-danger w-100 btn-vaciar-carrito"
+                    >
+                      Vaciar Carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </main>
+      <footer class="seccion">
+      <div class="container">
+        <div class="row">
+          <div class="columna columna-25">
+            <img src="img/logo.png" class="logo-footer" width="20px" />
+            <p style="color: rgb(255, 255, 255);">
+              <strong>&nbsp;&nbsp;&nbsp;Marisqueria La Corte</strong>
+            </p>
+          </div>
+          <div class="columna columna-25">
+            <div class="texto">
+            <p>Somos una cevichera con rumbo de crecer, somos experimentados en nuestras comida, llevando al máximo el placer del cliente.</p>
+          </div>
+          </div>
+          <div class="columna columna-21">
+            <h3 style="color: #b1410e;">Datos de contacto</h3>
+            <ul>
+              <li style="color: black;"><strong>GRUPO LA CORTE E.I.R.L.</strong></li>
+              <li style="color: black;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>979228767</strong>
+              </li>
+              <li style="color: black;">
+                <strong>Avenida Huancavelica 394</strong><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Huancayo-Perú</strong>
+              </li>
+            </ul>
+          </div>
+          <div class="columna columna-25">
+            <h3 style="color: #b1410e;">Nuestras Redes</h3>
+            <ul class="redes">
+              <li>
+                <a href="https://www.facebook.com/MarisqueriaLaCorte/"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/marisquerialacorte/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.rappi.com.pe/restaurantes/45577-marisqueria-la-corte"
+                  ><img
+                    src="img/Imagen Rappi.jpg"
+                    alt="rappi"
+                    style="width: 35px; height: auto"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="barra-footer">&copy; 2024 <strong>La Corte</strong> - Todos los Derechos Reservados.</div>
+    </footer>
+
+  <script src="compras.js"></script>
+ <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

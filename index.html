@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Marisquería La Corte - Ceviches frescos y los mejores platos marinos en Huancayo"
+    />
+    <meta
+      name="keywords"
+      content="cevichería, mariscos, pescados, comida marina, La Corte, Huancayo, Perú, ceviche fresco"
+    />
+    <meta name="author" content="Marisquería La Corte" />
+    <title>La Corte - Marisquería | Ceviches Frescos en Huancayo</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Google Fonts (optimizado) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Spicy+Rice&family=Dancing+Script:wght@400..700&family=Roboto:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/Logo3.png" type="image/x-icon" />
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header con efecto mejorado -->
+    <header>
+      <div class="container">
+        <div class="fila">
+          <div class="columna-50">
+            <a href="index.html" aria-label="Ir a inicio">
+              <img
+                src="img/logo.png"
+                class="logo"
+                alt="Logo La Corte Marisquería"
+                width="70"
+                height="70"
+              />
+            </a>
+          </div>
+          <div class="columna-50">
+            <nav role="navigation" aria-label="Menú principal">
+              <a href="#inicio" aria-label="Ir a inicio">Inicio</a>
+              <a href="especiales.html" aria-label="Ver especialidades"
+                >Especialidades</a
+              >
+              <a href="contacto.html" aria-label="Ir a contacto">Contacto</a>
+              <a href="Compras.html" aria-label="Ir a tienda">Tienda</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Sección Carrusel -->
+      <section id="inicio">
+        <div id="carouselExample" class="carousel slide carousel-fade">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/ImagenCevicheriaInicio.jpeg"
+                class="d-block w-100"
+                alt="Interior de Marisquería La Corte - Ambiente acogedor"
+                loading="eager"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/carrusel2.jpg"
+                class="d-block w-100 imagen-especial"
+                alt="Especialidades frescas de La Corte"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/Carrusel3.png"
+                class="d-block w-100 imagen-especial"
+                alt="Deliciosos platos marinos"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+            aria-label="Anterior"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+            aria-label="Siguiente"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
+        <!-- Bloque de bienvenida -->
+        <div class="bloque-inicio">
+          <h1>Bienvenidos a la Cevichería LA CORTE</h1>
+          <p>"Sabor del mar en cada bocado"</p>
+        </div>
+      </section>
+
+      <!-- Sección Menú con diseño -->
+      <section id="menu" class="seccion">
+        <div class="container">
+          <h3>NUESTRO MENÚ</h3>
+          <div class="button-container">
+            <a
+              href="Compras.html"
+              class="boton boton-rojo"
+              aria-label="Ver menú completo"
+            >
+              Pedir un Menú
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Nosotros con diseño renovado -->
+      <section id="nosotros" class="seccion">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <h3>Sobre Nosotros</h3>
+              <p>
+                <strong>
+                  Somos un rincón del sabor marino donde la frescura del océano
+                  se une a la tradición culinaria peruana. Nos especializamos en
+                  ceviches preparados con los mejores pescados y mariscos,
+                  siempre frescos y seleccionados cuidadosamente.
+                </strong>
+              </p>
+              <p>
+                <strong>
+                  Nuestro menú ofrece una variedad de ceviches clásicos y
+                  creativos, todos acompañados de guarniciones que resaltan la
+                  riqueza de nuestros sabores. En un ambiente acogedor y lleno
+                  de buena vibra, te invitamos a disfrutar de una experiencia
+                  gastronómica única que celebra la frescura y el sabor del mar.
+                  ¡Ven y déjate sorprender por la auténtica cocina del Perú!
+                </strong>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="img/Imagenlocal3.jpg"
+                alt="Nuestro acogedor local en Huancayo"
+                class="img-fluid rounded imagen-nosotros"
+                loading="lazy"
+                data-imagen-hover="img/Imagenlocal3.jpg"
+                data-imagen-original="img/Imagenlocal3.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Mejorado -->
+    <footer class="seccion">
+      <div class="container">
+        <div class="row">
+          <div class="columna columna-25">
+            <img
+              src="img/logo.png"
+              class="logo-footer"
+              alt="Logo Marisquería La Corte"
+              width="90"
+              height="90"
+            />
+            <p><strong>Marisquería La Corte</strong></p>
+            <p style="font-size: 0.9em; margin-top: 10px">
+              La mejor experiencia marina en Huancayo
+            </p>
+          </div>
+          <div class="columna columna-25">
+            <h3>Nuestra Historia</h3>
+            <div class="texto">
+              <p>
+                Somos una cevichera con rumbo de crecer, somos experimentados en
+                nuestra comida, llevando al máximo el placer del cliente.
+              </p>
+            </div>
+          </div>
+          <div class="columna columna-21">
+            <h3>Datos de Contacto</h3>
+            <ul>
+              <li><strong>GRUPO LA CORTE E.I.R.L.</strong></li>
+              <li>
+                <i class="fas fa-phone" style="margin-right: 8px"></i>
+                <strong>979228767</strong>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt" style="margin-right: 8px"></i>
+                <strong>Avenida Huancavelica 394</strong><br />
+                <strong style="margin-left: 22px">Huancayo - Perú</strong>
+              </li>
+              <li>
+                <i class="fas fa-clock" style="margin-right: 8px"></i>
+                <strong>Lun - Dom: 11:00 AM - 10:00 PM</strong>
+              </li>
+            </ul>
+          </div>
+          <div class="columna columna-25">
+            <h3>Nuestras Redes</h3>
+            <p style="margin-bottom: 20px; font-size: 0.9em">
+              Síguenos en redes sociales
+            </p>
+            <ul class="redes">
+              <li>
+                <a
+                  href="https://www.facebook.com/MarisqueriaLaCorte/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visitar Facebook"
+                  title="Facebook La Corte"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/marisquerialacorte/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visitar Instagram"
+                  title="Instagram La Corte"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.rappi.com.pe/restaurantes/45577-marisqueria-la-corte"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Pedir por Rappi"
+                  title="Pedidos por Rappi"
+                >
+                  <img
+                    src="img/Imagen Rappi.jpg"
+                    alt="Rappi"
+                    style="width: 35px; height: auto"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="barra-footer">
+        &copy; 2024 <strong>Marisquería La Corte</strong> - Todos los Derechos
+        Reservados.
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript Personalizado -->
+    <script src="./codigo.js"></script>
+  </body>
+</html>
